@@ -59,23 +59,6 @@ Merge Pull Request       4
 Clarification Meeting    1
 Name: count, dtype: Int64
 
-Cases View:
-Case_ID: Case_001
-  Sequence of Activities: Ticket Review -> Clarification Meeting -> Start Working on Task -> Runs Automated Tests -> Creates Pull Request -> QA Testing -> Code Review -> Merge Pull Request
-  Final Status: Completed
-
-Case_ID: Case_002
-  Sequence of Activities: Ticket Review -> Start Working on Task -> Runs Automated Tests -> Fix Issues -> Runs Automated Tests -> Creates Pull Request -> QA Testing -> Fix Issues -> QA Testing -> Code Review -> Merge Pull Request
-  Final Status: Completed
-
-Case_ID: Case_003
-  Sequence of Activities: Ticket Review -> Start Working on Task -> Runs Automated Tests -> Creates Pull Request -> QA Testing -> Fix Issues -> QA Testing -> Fix Issues -> QA Testing -> Code Review -> Merge Pull Request
-  Final Status: Completed
-
-Case_ID: Case_004
-  Sequence of Activities: Ticket Review -> Start Working on Task -> Runs Automated Tests -> Creates Pull Request -> QA Testing -> Code Review -> Fix Issues -> Creates Pull Request -> QA Testing -> Code Review -> Merge Pull Request
-  Final Status: Completed
-
 Heuristic net created successfully.
 Heuristic net visualization saved as heuristic.png
 
