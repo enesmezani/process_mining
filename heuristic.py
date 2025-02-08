@@ -41,37 +41,6 @@ print(f"Total number of events: {total_events}")
 print("Activity distribution:")
 print(activity_distribution)
 
-# Cases View
-def create_cases_view(df):
-    df.sort_values(by=["Case_ID", "Timestamp"], inplace=True)
-
-    # Group by Case_ID and aggregate information
-    cases_summary = (
-        df.groupby("Case_ID")
-        .agg(
-            {
-                "Activity": lambda x: " -> ".join(x),
-                "Status": "last",
-            }
-        )
-        .reset_index()
-    )
-    cases_summary.rename(
-        columns={"Activity": "Sequence of Activities", "Status": "Final Status"},
-        inplace=True,
-    )
-    return cases_summary
-
-cases_view = create_cases_view(df)
-
-print("\nCases View:")
-for index, row in cases_view.iterrows():
-    print(f"Case_ID: {row['Case_ID']}")
-    print(f"  Sequence of Activities: {row['Sequence of Activities']}")
-    print(f"  Final Status: {row['Final Status']}\n")
-
-cases_view.to_csv("cases_summary.csv", index=False)
-
 # Apply Heuristic Miner to discover a heuristic net
 heuristic_net = heuristics_miner.apply_heu(log)
 print("Heuristic net created successfully.")
