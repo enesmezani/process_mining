@@ -1,8 +1,6 @@
-Rows with NaT in 'Timestamp':
-Empty DataFrame
-Columns: [Case_ID, Activity, Resource, Timestamp, Status]
-Index: []
-Sorted DataFrame:
+Heuristic
+
+DataFrame:
      Case_ID               Activity   Resource           Timestamp        Status
 0   Case_001          Ticket Review  Developer 2024-12-18 09:00:00     Completed
 1   Case_001  Clarification Meeting  Team Lead 2024-12-18 10:00:00     Completed
@@ -79,15 +77,11 @@ Case_ID: Case_004
   Final Status: Completed
 
 Heuristic net created successfully.
+Heuristic net visualization saved as heuristic.png
 
+Alphaminer
 
-
-
-Rows with NaT in 'Timestamp':
-Empty DataFrame
-Columns: [Case_ID, Activity, Resource, Timestamp, Status]
-Index: []
-Sorted DataFrame:
+DataFrame:
      Case_ID               Activity   Resource           Timestamp        Status
 0   Case_001          Ticket Review  Developer 2024-12-18 09:00:00     Completed
 1   Case_001  Clarification Meeting  Team Lead 2024-12-18 10:00:00     Completed
@@ -131,3 +125,4 @@ Sorted DataFrame:
 39  Case_004            Code Review  Team Lead 2024-12-18 17:20:00      Approved
 40  Case_004     Merge Pull Request  Team Lead 2024-12-18 17:30:00     Completed
 Alpha Miner applied successfully.
+Petri net visualization saved as alpha_miner_petri_net.png

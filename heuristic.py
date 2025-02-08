@@ -78,8 +78,8 @@ print("Heuristic net created successfully.")
 
 # Visualize the heuristic net
 heuristic_net_image = hn_visualizer.apply(heuristic_net)
-hn_visualizer.save(heuristic_net_image, "heuristic2.png")
-print("Heuristic net visualization saved as heuristic2.png")
+hn_visualizer.save(heuristic_net_image, "heuristic.png")
+print("Heuristic net visualization saved as heuristic.png")
 
 # Convert heuristic net to Petri net for conformance checking
 net, initial_marking, final_marking = pm4py.convert_to_petri_net(heuristic_net)
