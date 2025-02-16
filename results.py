@@ -67,6 +67,7 @@ hn_visualizer.save(heuristic_net_image, "heuristic.png")
 print("Heuristic net visualization saved as heuristic.png")
 
 # Visualize the Petri net
-gviz = pn_visualizer.apply(net, initial_marking, final_marking)
-pn_visualizer.save(gviz, "alpha_miner_petri_net.png")
+gviz_alpha = pn_visualizer.apply(net_alpha, im_alpha, fm_alpha)
+pn_visualizer.save(gviz_alpha, "alpha_miner_petri_net.png")
 print("Petri net visualization saved as alpha_miner_petri_net.png")
+
